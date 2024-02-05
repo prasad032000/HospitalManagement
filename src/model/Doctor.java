@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Doctor {
@@ -9,7 +10,7 @@ public class Doctor {
     String speciality;
     int salary;
     long phone;
-    List<Patient> list;
+    List<Patient> list =new ArrayList<>();
     String timeSlot;
 
     @Override
@@ -21,19 +22,17 @@ public class Doctor {
                 ", speciality='" + speciality + '\'' +
                 ", salary=" + salary +
                 ", phone=" + phone +
-                ", list=" + list +
                 ", timeSlot='" + timeSlot + '\'' +
                 '}';
     }
 
-    public Doctor(String docId, String name, String degree, String speciality, int salary, long phone, List<Patient> list, String timeSlot) {
+    public Doctor(String docId, String name, String degree, String speciality, int salary, long phone, String timeSlot) {
         this.docId = docId;
         this.name = name;
         this.degree = degree;
         this.speciality = speciality;
         this.salary = salary;
         this.phone = phone;
-        this.list = list;
         this.timeSlot = timeSlot;
     }
 

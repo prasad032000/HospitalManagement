@@ -18,8 +18,6 @@ public class Room {
         return "Room{" +
                 "roomId='" + roomId + '\'' +
                 ", isOccupied=" + isOccupied +
-                ", patient=" + patient +
-                ", doctor=" + doctor +
                 '}';
     }
 
